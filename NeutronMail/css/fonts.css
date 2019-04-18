@@ -1,0 +1,42 @@
+/*Malaga*/
+@font-face {
+	font-family: '﻿MalagaOTCE-RegItalic';
+	src: local('﻿MalagaOTCE-RegItalic'),
+	url('../assets/fonts/Malaga/Malaga Regular.ttf');
+	font-weight: normal;
+	font-style: italic;
+}
+
+/*Myriad-Pro*/
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: local('MyriadPro-Regular'),
+	url('../assets/fonts/Myriad-Pro/MyriadPro-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Titillium-Web*/
+@font-face {
+	font-family: 'TitilliumWeb-Bold';
+	src: local('TitilliumWeb-Bold'),
+	url('../assets/fonts/Titillium-Web/TitilliumWeb-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TitilliumWeb-SemiBold';
+	src: local('TitilliumWeb-SemiBold'),
+	url('../assets/fonts/Titillium-Web/TitilliumWeb-SemiBold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TitilliumWeb-Regular';
+	src: local('TitilliumWeb-Regular'),
+	url('../assets/fonts/Titillium-Web/TitilliumWeb-Regular.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
