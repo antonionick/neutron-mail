@@ -1,0 +1,141 @@
+@import "normalize.css";
+
+/*header*/
+.header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-sizing: border-box;
+	height: 190px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+/*logo and languages*/
+.container {
+	flex: 6 1 auto;
+	align-self: center;
+	margin-top: 55px;
+	padding-left: 5px;
+}
+
+.logo {
+	display: block;
+	width: 157px;
+	height: 22px;
+	overflow: hidden;
+}
+
+.language {
+	display: flex;
+	justify-content: space-between;
+	width: 236px;
+	margin-top: 28px;
+	padding: 0;
+	list-style: none;
+}
+
+.language__item {
+	position: relative;
+	font-size: 1em;
+	text-decoration: none;
+	color: rgb(163, 163, 163);
+}
+
+.language__item::after{
+	content: "/";
+	position: absolute;
+	top: 0;
+	right: -12px;
+	font-weight: 900;
+}
+
+.language__item_last::after {
+	content: "";
+}
+
+.language__item:hover {
+	color: rgb(115, 115, 115);
+	transition: color 0.6s;
+}
+
+.language__item_selected {
+	color: rgb(133, 134, 136);
+	padding-bottom: 2px;
+	border-bottom: 1px solid rgb(115, 115, 115);
+}
+
+/*nav*/
+.nav {
+	flex: 2 1 auto;
+}
+
+.nav__list {
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav__item {
+	font-size: 1.1em;
+	text-decoration: none;
+	color: rgb(69, 69, 69);
+}
+
+.nav__item:hover {
+	padding-bottom: 2px;
+	border-bottom: 1px solid rgb(50, 50, 50);
+	color: rgb(50, 50, 50);
+	transition: color 0.6s;
+}
+
+/*login and sign up*/
+.auth-bar {
+	flex: 1 1 auto;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 5px;
+}
+
+/*font awesome*/
+.auth-bar__login, .auth-bar__sign-up {
+	align-self: center;
+	font-size: 1.1em;
+	font-weight: 600;
+	text-decoration: none;
+	color: rgb(80, 80, 80);
+}
+
+.auth-bar__login {
+	margin-right: 8%;
+}
+
+.auth-bar__login .fas {
+	color: rgb(88, 44, 126);
+	font-size: 0.9em;
+}
+
+.auth-bar__text {
+	padding-left: 2px;
+}
+
+.auth-bar__sign-up {
+	padding: 0.5em 1em;
+	text-align: center;
+	color: white;
+	background: linear-gradient(to bottom right, #582c7e 30%, #616dc3 60%);
+	box-shadow: 0 6px 10px 1px #7c8ec7;
+	border-radius: 22px;
+	transition: box-shadow 0.3s;
+}
+
+.auth-bar__sign-up:hover {
+	box-shadow: 0 4px 8px 4px #7c8ec7;
+}
+
+.auth-bar__sign-up:active {
+	box-shadow: none;
+	transition: box-shadow 0.3s;
+}
