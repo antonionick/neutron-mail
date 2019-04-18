@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "fonts.css";
 
 /*header*/
 .header {
@@ -13,7 +14,7 @@
 
 /*logo and languages*/
 .container {
-	flex: 6 1 auto;
+	flex: 5 1 auto;
 	align-self: center;
 	margin-top: 55px;
 	padding-left: 5px;
@@ -30,14 +31,16 @@
 	display: flex;
 	justify-content: space-between;
 	width: 236px;
-	margin-top: 28px;
+	margin-top: 26px;
 	padding: 0;
 	list-style: none;
 }
 
+/*text*/
 .language__item {
 	position: relative;
-	font-size: 1em;
+	font-family: TitilliumWeb-Bold, TitilliumWeb-Regular, MyriadPro-Regular, sans-serif;
+	font-size: 0.9em;
 	text-decoration: none;
 	color: rgb(163, 163, 163);
 }
@@ -45,8 +48,8 @@
 .language__item::after{
 	content: "/";
 	position: absolute;
-	top: 0;
-	right: -12px;
+	top: 18%;
+	right: -15px;
 	font-weight: 900;
 }
 
@@ -78,17 +81,17 @@
 	list-style: none;
 }
 
+/*text*/
 .nav__item {
-	font-size: 1.1em;
+	font-family: TitilliumWeb-Bold, TitilliumWeb-Regular, MyriadPro-Regular, sans-serif;
+	font-size: 0.9em;
 	text-decoration: none;
 	color: rgb(69, 69, 69);
 }
 
 .nav__item:hover {
 	padding-bottom: 2px;
-	border-bottom: 1px solid rgb(50, 50, 50);
-	color: rgb(50, 50, 50);
-	transition: color 0.6s;
+	border-bottom: 1px solid rgb(69, 69, 69);
 }
 
 /*login and sign up*/
@@ -99,17 +102,18 @@
 	padding-right: 5px;
 }
 
-/*font awesome*/
+/*text*/
 .auth-bar__login, .auth-bar__sign-up {
 	align-self: center;
-	font-size: 1.1em;
+	font-family: TitilliumWeb-Bold, TitilliumWeb-Regular, MyriadPro-Regular, sans-serif;
+	font-size: 1em;
 	font-weight: 600;
 	text-decoration: none;
 	color: rgb(80, 80, 80);
 }
 
 .auth-bar__login {
-	margin-right: 8%;
+	margin-right: 10%;
 }
 
 .auth-bar__login .fas {
@@ -122,7 +126,7 @@
 }
 
 .auth-bar__sign-up {
-	padding: 0.5em 1em;
+	padding: 0.6em 1.3em;
 	text-align: center;
 	color: white;
 	background: linear-gradient(to bottom right, #582c7e 30%, #616dc3 60%);
@@ -132,7 +136,7 @@
 }
 
 .auth-bar__sign-up:hover {
-	box-shadow: 0 4px 8px 4px #7c8ec7;
+	box-shadow: 0 4px 8px 6px #7c8ec7;
 }
 
 .auth-bar__sign-up:active {
