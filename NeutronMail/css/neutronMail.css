@@ -10,6 +10,7 @@
 	height: 190px;
 	max-width: 1400px;
 	margin: 0 auto;
+	padding: 0 5px;
 }
 
 /*logo and languages*/
@@ -17,7 +18,6 @@
 	flex: 5 1 auto;
 	align-self: center;
 	margin-top: 55px;
-	padding-left: 5px;
 }
 
 .logo {
@@ -45,7 +45,7 @@
 	color: rgb(163, 163, 163);
 }
 
-.language__item::after{
+.language__item::after {
 	content: "/";
 	position: absolute;
 	top: 18%;
@@ -99,7 +99,6 @@
 	flex: 1 1 auto;
 	display: flex;
 	justify-content: flex-end;
-	padding-right: 5px;
 }
 
 /*text*/
@@ -132,14 +131,151 @@
 	background: linear-gradient(to bottom right, #582c7e 30%, #616dc3 60%);
 	box-shadow: 0 6px 10px 1px #7c8ec7;
 	border-radius: 22px;
-	transition: box-shadow 0.3s;
+	transition: box-shadow 0.6s;
 }
 
 .auth-bar__sign-up:hover {
-	box-shadow: 0 4px 8px 6px #7c8ec7;
+	box-shadow: 0 6px 10px 5px #8fa2dc;
+	transition: box-shadow 0.6s;
 }
 
 .auth-bar__sign-up:active {
 	box-shadow: none;
-	transition: box-shadow 0.3s;
+	transition: box-shadow 0.6s;
+}
+
+/*main*/
+.main-title {
+	position: relative;
+	max-height: 700px;
+}
+
+/*main img*/
+.main-title__img {
+	width: 100%;
+	height: auto;
+	max-height: inherit;
+}
+
+/*container of title and create account*/
+.main-title__info {
+	position: absolute;
+	top: 21%;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 250px;
+}
+
+.title-container__title, .title-container__description {
+	margin: 0 0 10px;
+	font-family: TitilliumWeb-Regular, TitilliumWeb-SemiBold, MyriadPro-Regular, sans-serif;
+	font-size: 3.9em;
+	color: rgb(122, 122, 121);
+}
+
+.title-container__description {
+	margin: 0;
+	font-size: 2.2em;
+	text-align: center;
+}
+
+.title-container__description_red {
+	color: #fc6b6d;
+}
+
+/*create account and refers to stores*/
+.create-account {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.create-account::after {
+	content: "";
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 1%;
+	margin: 0 auto;
+	width: 602px;
+	height: 57px;
+	background-image: url("../assets/img/shadow.png");
+	z-index: 1;
+}
+
+.create-account__create {
+	padding: 20px 66px;
+	font-family: TitilliumWeb-Bold, MyriadPro-Regular, sans-serif;
+	font-size: 1.1em;
+	color: white;
+	text-decoration: none;
+	background: linear-gradient(to left, #5f2f6a 10%, #636b92 60%);
+	border-radius: 50px;
+	box-shadow: 0 10px 20px #6883cc;
+	transition: box-shadow 0.6s;
+	z-index: 2;
+}
+
+.create-account__create:hover {
+	box-shadow: 0 10px 18px 5px #6883cc;
+	transition: box-shadow 0.6s;
+}
+
+.create-account__create:active {
+	box-shadow: none;
+	transition: box-shadow 0.6s;
+}
+
+.create-account__store {
+	align-self: center;
+	margin-left: 24px;
+	padding: 12px 14px;
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+	background: #7d5280;
+	border-radius: 50px;
+	opacity: 0.9;
+	transition: opacity 0.6s;
+	z-index: 2;
+}
+
+.create-account__store:hover {
+	opacity: 1;
+	transition: opacity 0.6s;
+}
+
+.create-account__store_android {
+	padding: 12px 10px 12px 14px;
+}
+
+.soc-networks {
+	position: fixed;
+	top: 36%;
+	right: 3%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	height: 94px;
+	list-style: none;
+}
+
+.soc-networks__item {
+	display: block;
+	font-size: 1.4em;
+	width: 20px;
+	text-align: center;
+	color: #676766;
+}
+
+.soc-networks__item:hover {
+	color: #878786;
+	transition: color 0.6s;
 }
