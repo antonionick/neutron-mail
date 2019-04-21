@@ -9,18 +9,22 @@
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/neutronMail.css">
 </head>
+
 <body>
+<!--header-->
 <header class="header">
 	<!--logo container-->
 	<div class="container">
 		<a href="#" class="logo"><img src="assets/img/logo.png" alt="logo"></a>
-		<ul class="language">
-			<li><a class="language__item language__item_selected" href="#">English</a></li>
-			<li><a class="language__item" href="#" id="">French</a></li>
-			<li><a class="language__item" href="#">Italian</a></li>
-			<li><a class="language__item language__item_last" href="#">Polish</a></li>
+		<!--language list-->
+		<ul class="language-list">
+			<li><a class="language-list__item language-list__item_selected" href="#">English</a></li>
+			<li><a class="language-list__item" href="#">French</a></li>
+			<li><a class="language-list__item" href="#">Italian</a></li>
+			<li><a class="language-list__item language-list__item_last" href="#">Polish</a></li>
 		</ul>
 	</div>
+	<!--navigation-->
 	<nav class="nav">
 		<ul class="nav__list">
 			<li><a class="nav__item" href="#">About</a></li>
@@ -41,25 +45,31 @@
 	</div>
 </header>
 
+<!--main content-->
 <main class="main">
 	<!--section with img and title of site-->
 	<section class="main-title">
 		<img class="main-title__img" src="assets/img/background.png" alt="mountains">
+		<!--title-->
 		<section class="main-title__info">
 			<div class="title-container">
 				<h1 class="title-container__title">Secure Email Communication</h1>
 				<h2 class="title-container__description">Based in <span class="title-container__description_red">Somewhere</span></h2>
 			</div>
+			<!--buttons container-->
 			<div class="create-account">
+				<!--button to create account-->
 				<a class="create-account__create" href="#">Create account</a>
+				<!--link to app store-->
 				<a class="create-account__store" href="https://www.apple.com/ru/ios/app-store/" target="_blank">
 					<i class="fab fa-apple"></i>
 				</a>
-				<a class="create-account__store create-account__store_android" href="https://play.google.com/store?hl=ru"
-					target="_blank">
+				<!--link to google store-->
+				<a class="create-account__store create-account__store_android" href="https://play.google.com/store?hl=ru" target="_blank">
 					<i class="fab fa-google-play"></i>
 				</a>
 			</div>
+			<!--social network links-->
 			<ul class="soc-networks">
 				<li>
 					<a class="soc-networks__item" href="#"><i class="fab fa-google-plus-square"></i></a>
@@ -67,14 +77,16 @@
 				<li>
 					<a class="soc-networks__item" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
 				</li>
-				<li><a class="soc-networks__item" href="https://twitter.com/?lang=ru" target="_blank"><i
-					class="fab fa-twitter-square"></i></a>
+				<li>
+					<a class="soc-networks__item" href="https://twitter.com/?lang=ru" target="_blank"><i class="fab fa-twitter-square"></i></a>
 				</li>
 			</ul>
 		</section>
 	</section>
 	
+	<!--features container-->
 	<section class="features">
+		<!--feature description with line to up-->
 		<div class="features__item features__item_line-up">
 			<div class="title">
 				<img class="title__img" src="assets/img/privacy.png" alt="Swiss Privacy">
@@ -86,6 +98,7 @@
 			<p class="features__description">NeutronMail is incorporated in Somewhere and all our servers are located in Switzerland.
 				This means all user data is protected by strict Swiss privacy laws.</p>
 		</div>
+		<!--feature description with line to down-->
 		<div class="features__item features__item_line-down">
 			<div class="title">
 				<img class="title__img" src="assets/img/encryption.png" alt="Double Encryption">
@@ -97,6 +110,7 @@
 			<p class="features__description">All emails are secured automatically with end-to-end encryption. This means even we
 				cannot decrypt and read your emails. As a result, your encrypted emails cannot be shared with third parties.</p>
 		</div>
+		<!--just feature description-->
 		<div class="features__item">
 			<div class="title">
 				<img class="title__img" src="assets/img/key.png" alt="Anonymous Email">
@@ -108,6 +122,7 @@
 			<p class="features__description">No personal information is required to create your secure email account. By default, we
 				do not keep any IP logs which can be linked to your anonymous email account. Your privacy comes first.</p>
 		</div>
+		<!--container with link to more information about features-->
 		<div class="features-description">
 			<h1 class="features-description__title">Physical Security</h1>
 			<p class="features-description__inform">NeutronMail's infrastructure resides in Europe's <span
@@ -116,9 +131,12 @@
 		</div>
 	</section>
 	
+	<!--section with links to mobile applications-->
 	<section class="devices">
+		<!--img partners-->
 		<img class="devices__partners" src="assets/img/partners.png" alt="partners">
 		<div class="devices__content">
+			<!--comments of service-->
 			<p class="devices__information">
 				<span class="devices__information_circles">
 						<span class="devices__information_circle devices__information_circle-one"></span>
@@ -130,6 +148,7 @@
 				<span class="devices__information_quote">— Boston Herald</span>
 			</p>
 			<img class="devices__devices-img" src="assets/img/devices.png" alt="devices">
+			<!--links container-->
 			<article class="mobile-app">
 				<h2 class="mobile-app__title">Any device, anywhere</h2>
 				<p class="mobile-app__description">
@@ -147,7 +166,7 @@
 			</article>
 		</div>
 	</section>
-	
+	<!--section of support project-->
 	<section class="support">
 		<h2 class="support__title">Privacy is a fundamental human right.</h2>
 		<h3 class="support__description">Your support helps us to protect privacy world-wide.</h3>
@@ -163,7 +182,9 @@
 </main>
 
 <footer class="footer">
+	<!--wrap on footer for lines-->
 	<section class="footer-wrap">
+		<!--main content of footer-->
 		<section class="footer-inform">
 			<div class="footer-partners">
 				<h3 class="footer-partners__title">Those, who help us secure your privacy</h3>
@@ -230,7 +251,7 @@
 				<li><a class="footer-copy__item" href="#">Feedback Forum</a></li>
 				<li><a class="footer-copy__item footer-copy__item_last" href="https://www.reddit.com">Reddit</a></li>
 			</ul>
-			<p class="footer-copy__copy">&#169 2017 Neutron Technologies AG. All Rights Reserved.</p>
+			<p class="footer-copy__copy">&#169; 2017 Neutron Technologies AG. All Rights Reserved.</p>
 		</div>
 	</section>
 </footer>

@@ -27,7 +27,7 @@
 	overflow: hidden;
 }
 
-.language {
+.language-list {
 	display: flex;
 	justify-content: space-between;
 	width: 236px;
@@ -37,7 +37,7 @@
 }
 
 /*text*/
-.language__item {
+.language-list__item {
 	position: relative;
 	font-family: TitilliumWeb-Bold, TitilliumWeb-Regular, MyriadPro-Regular, sans-serif;
 	font-size: 0.9em;
@@ -45,7 +45,7 @@
 	color: rgb(163, 163, 163);
 }
 
-.language__item::after {
+.language-list__item::after {
 	content: "/";
 	position: absolute;
 	top: 18%;
@@ -53,16 +53,16 @@
 	font-weight: 900;
 }
 
-.language__item_last::after {
+.language-list__item_last::after {
 	content: "";
 }
 
-.language__item:hover {
+.language-list__item:hover {
 	color: rgb(115, 115, 115);
 	transition: color 0.6s;
 }
 
-.language__item_selected {
+.language-list__item_selected {
 	color: rgb(133, 134, 136);
 	padding-bottom: 2px;
 	border-bottom: 1px solid rgb(115, 115, 115);
