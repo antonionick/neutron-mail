@@ -6,11 +6,12 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>NeutronMail</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-				integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/neutronMail.css">
 </head>
 <body>
 <header class="header">
+	<!--logo container-->
 	<div class="container">
 		<a href="#" class="logo"><img src="assets/img/logo.png" alt="logo"></a>
 		<ul class="language">
@@ -30,6 +31,7 @@
 			<li><a class="nav__item" href="#">Donate</a></li>
 		</ul>
 	</nav>
+	<!--authorization-->
 	<div class="auth-bar">
 		<a href="#" class="auth-bar__login">
 			<i class="fas fa-sign-in-alt"></i>
@@ -40,6 +42,7 @@
 </header>
 
 <main class="main">
+	<!--section with img and title of site-->
 	<section class="main-title">
 		<img class="main-title__img" src="assets/img/background.png" alt="mountains">
 		<section class="main-title__info">
@@ -49,22 +52,28 @@
 			</div>
 			<div class="create-account">
 				<a class="create-account__create" href="#">Create account</a>
-				<a class="create-account__store" href="https://www.apple.com/ru/ios/app-store/" target="_blank"><i
-					class="fab fa-apple"></i></a>
+				<a class="create-account__store" href="https://www.apple.com/ru/ios/app-store/" target="_blank">
+					<i class="fab fa-apple"></i>
+				</a>
 				<a class="create-account__store create-account__store_android" href="https://play.google.com/store?hl=ru"
-					 target="_blank"><i
-					class="fab fa-google-play"></i></a>
+					target="_blank">
+					<i class="fab fa-google-play"></i>
+				</a>
 			</div>
 			<ul class="soc-networks">
-				<li><a class="soc-networks__item" href="#"><i class="fab fa-google-plus-square"></i></a></li>
-				<li><a class="soc-networks__item" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+				<li>
+					<a class="soc-networks__item" href="#"><i class="fab fa-google-plus-square"></i></a>
+				</li>
+				<li>
+					<a class="soc-networks__item" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
 				</li>
 				<li><a class="soc-networks__item" href="https://twitter.com/?lang=ru" target="_blank"><i
-					class="fab fa-twitter-square"></i></a></li>
+					class="fab fa-twitter-square"></i></a>
+				</li>
 			</ul>
 		</section>
 	</section>
-
+	
 	<section class="features">
 		<div class="features__item features__item_line-up">
 			<div class="title">
@@ -106,7 +115,7 @@
 			<a class="features-description__button" href="#">Learn more about our security features</a>
 		</div>
 	</section>
-
+	
 	<section class="devices">
 		<img class="devices__partners" src="assets/img/partners.png" alt="partners">
 		<div class="devices__content">
@@ -138,7 +147,7 @@
 			</article>
 		</div>
 	</section>
-
+	
 	<section class="support">
 		<h2 class="support__title">Privacy is a fundamental human right.</h2>
 		<h3 class="support__description">Your support helps us to protect privacy world-wide.</h3>
@@ -152,5 +161,78 @@
 		</div>
 	</section>
 </main>
+
+<footer class="footer">
+	<section class="footer-wrap">
+		<section class="footer-inform">
+			<div class="footer-partners">
+				<h3 class="footer-partners__title">Those, who help us secure your privacy</h3>
+				<img class="footer-partners__img" src="assets/img/partners_foot.png" alt="partners">
+			</div>
+			
+			<div class="footer-links">
+				<div class="footer-contacts">
+					<ul class="footer-contacts__list">
+						<li class="footer-contacts__item-text">General:
+							<a class="footer-contacts__item-link" href="mailto:contact@neutronmail.ch">contact@neutronmail.ch</a>
+						</li>
+						<li class="footer-contacts__item-text">Media :
+							<a class="footer-contacts__item-link" href="mailto:media@neutronmail.ch">media@neutronmail.ch</a>
+						</li>
+						<li class="footer-contacts__item-text">Security:
+							<a class="footer-contacts__item-link" href="mailto:security@neutronmail.ch">security@neutronmail.ch</a>
+						</li>
+						<li class="footer-contacts__item-text footer-contacts__item_support">For support inquiries, please visit:
+							<a class="footer-contacts__item-link" href="#">neutronmail.com/support</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-nav">
+					<div class="footer-nav__container footer-nav_line">
+						<h2 class="footer-nav__title">Company</h2>
+						<ul class="footer-nav__list">
+							<li><a class="footer-nav__item" href="#">Blog</a></li>
+							<li><a class="footer-nav__item" href="#">Team</a></li>
+							<li><a class="footer-nav__item" href="#">Careers</a></li>
+							<li><a class="footer-nav__item" href="#">Support</a></li>
+							<li><a class="footer-nav__item" href="#">Donate</a></li>
+						</ul>
+					</div>
+					<div class="footer-nav__container">
+						<h2 class="footer-nav__title">Legal</h2>
+						<ul class="footer-nav__list">
+							<li><a class="footer-nav__item" href="#">Imprint</a></li>
+							<li><a class="footer-nav__item" href="#">Privacy Policy</a></li>
+							<li><a class="footer-nav__item" href="#">Terms & Conditions</a></li>
+							<li><a class="footer-nav__item" href="#">Transparency Report</a></li>
+							<li><a class="footer-nav__item" href="#">Report Abuse</a></li>
+						</ul>
+					</div>
+					<div class="footer-nav__container">
+						<h2 class="footer-nav__title">NeutronMail</h2>
+						<ul class="footer-nav__list">
+							<li><a class="footer-nav__item" href="#">Pricing</a></li>
+							<li><a class="footer-nav__item" href="#">Security</a></li>
+							<li><a class="footer-nav__item" href="#">Shop</a></li>
+							<li><a class="footer-nav__item" href="#">Press/Media Kit</a></li>
+							<li><a class="footer-nav__item" href="#">Onion Site</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<div class="footer-copy">
+			<ul class="footer-copy__list">
+				<li><a class="footer-copy__item " href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+				<li><a class="footer-copy__item" href="https://twitter.com/?lang=ru">Twitter</a></li>
+				<li><a class="footer-copy__item" href="https://plus.google.com/discover">Google+</a></li>
+				<li><a class="footer-copy__item" href="#">Feedback Forum</a></li>
+				<li><a class="footer-copy__item footer-copy__item_last" href="https://www.reddit.com">Reddit</a></li>
+			</ul>
+			<p class="footer-copy__copy">&#169 2017 Neutron Technologies AG. All Rights Reserved.</p>
+		</div>
+	</section>
+</footer>
 </body>
 </html>

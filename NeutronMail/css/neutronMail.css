@@ -260,8 +260,8 @@
 
 /*social networks*/
 .soc-networks {
-	position: fixed;
-	top: 36%;
+	position: absolute;
+	top: 2%;
 	right: 3%;
 	display: flex;
 	flex-direction: column;
@@ -576,7 +576,7 @@
 	padding: 40px 0 80px;
 	font-family: TitilliumWeb-Regular, MyriadPro-Regular, sans-serif;
 	text-align: center;
-	background: #f6f6f6;
+	background: linear-gradient(to bottom, #f6f6f6, white);
 }
 
 .support__title {
@@ -635,4 +635,224 @@
 .support__button:active {
 	box-shadow: none;
 	transition: box-shadow 0.6s;
+}
+
+
+/*footer*/
+.footer {
+	background: white;
+}
+
+.footer-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 600px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.footer-inform {
+	position: relative;
+	box-sizing: border-box;
+	max-width: 1200px;
+	padding-left: 5px;
+	border-top: 2px solid #b9b9b9;
+	border-right: 2px solid #b9b9b9;
+	font-family: TitilliumWeb-Bold, ﻿TitilliumWeb-Regular, MyriadPro-Regular, sans-serif;
+}
+
+.footer-inform::before {
+	content: "";
+	position: absolute;
+	top: -2px;
+	right: 100%;
+	width: 100%;
+	height: 2px;
+	background: #b9b9b9;
+}
+
+.footer-partners {
+	position: relative;
+	padding-top: 20px;
+	margin-right: 20px;
+	text-align: right;
+}
+
+.footer-partners::after {
+	content: "";
+	position: absolute;
+	right: -22px;
+	width: 2px;
+	height: 80%;
+	background: #b9b9b9;
+}
+
+.footer-partners__title {
+	margin: 0;
+	font-family: TitilliumWeb-Bold, MyriadPro-Regular, sans-serif;
+	font-size: 0.85em;
+	color: rgb(122, 122, 122);
+}
+
+.footer-partners__img {
+	position: relative;
+	right: -5.6%;
+	max-width: 100%;
+	height: auto;
+}
+
+.footer-links {
+	display: flex;
+	margin: 160px 20px 0 0;
+}
+
+.footer-contacts {
+	flex: 5 1;
+	padding-right: 5px;
+}
+
+.footer-contacts__list {
+	position: relative;
+	overflow: hidden;
+	width: 220px;
+	margin: 0;
+	padding-left: 20px;
+	font-size: 0.9em;
+	color: rgb(114, 114, 114);
+	list-style: none;
+}
+
+.footer-contacts__list::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 2px;
+	background: #b9b9b9;
+}
+
+.footer-contacts__item-text {
+	margin-bottom: 8px;
+}
+
+.footer-contacts__item_support {
+	margin-top: 25px;
+}
+
+.footer-contacts__item-link {
+	color: #373737;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom-color 0.6s;
+}
+
+.footer-contacts__item-link:hover {
+	border-bottom:2px solid #e2e2e2;
+	transition: border-bottom-color 0.6s;
+}
+
+.footer-nav {
+	flex: 4 1;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 5px;
+	text-align: right;
+}
+
+.footer-nav__container {
+	position: relative;
+}
+
+.footer-nav_line::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -25px;
+	height: 210%;
+	width: 2px;
+	background: #b9b9b9;
+}
+
+.footer-nav__title {
+	margin: 0;
+	color: #5c5c5c;
+	font-size: 1.2em;
+}
+
+.footer-nav__list {
+	margin: 25px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.footer-nav__item {
+	position: relative;
+	display: block;
+	margin: 0 12px 4px 0;
+	font-size: 0.9em;
+	color: #a7a7a7;
+	text-decoration: none;
+	list-style-position: outside;
+}
+
+.footer-nav__item::after {
+	content: "";
+	position: absolute;
+	top: 45%;
+	right: -12px;
+	width: 3px;
+	height: 4px;
+	background: #5c5c5c;
+	border-radius: 1px;
+}
+
+.footer-copy {
+	padding: 0 5px;
+	font-family: TitilliumWeb-Bold, MyriadPro-Regular, sans-serif;
+}
+
+.footer-copy__list {
+	display: flex;
+	justify-content: space-between;
+	width: 362px;
+	padding: 0;
+	list-style: none;
+}
+
+.footer-copy__list:hover {
+	color: rgb(115, 115, 115);
+	transition: color 0.6s;
+}
+
+/*text*/
+.footer-copy__item {
+	position: relative;
+	font-size: 0.8em;
+	text-decoration: none;
+	color: rgb(163, 163, 163);
+	border-bottom: 2px solid transparent;
+	transition: border-bottom-color 0.6s;
+}
+
+.footer-copy__item:hover {
+	border-bottom: 2px solid #e2e2e2;
+	transition: border-bottom-color 0.6s;
+}
+
+.footer-copy__item::after {
+	content: "/";
+	position: absolute;
+	top: 18%;
+	right: -15px;
+	font-weight: 900;
+}
+
+.footer-copy__item_last::after {
+	content: "";
+}
+
+.footer-copy__copy {
+	font-size: 0.75em;
+	color: rgb(92, 92, 92);
 }
